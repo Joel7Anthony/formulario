@@ -1,0 +1,94 @@
+<div class="container">
+    <link rel="stylesheet" type="text/css" href="fonts.googleapis.co.css">
+    <header class="header">
+      <h1 id="title" class="text-center">Formulario Scorpion</h1>
+      <p id="description" class="description text-center">
+        Gracias por tomarse el tiempo para ayudarnos a mejorar el entranamiento de los estudiantes 
+      </p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Nombre</label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Ingrese su nombre" required />
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Ingrese tu Email" required />
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number">Edad<span class="clue">(optional)</span></label>
+        <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Edad" />
+      </div>
+      <div class="form-group">
+        <p>¿Ha practicado un deporte antes? ¿Cuál?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Select current role</option>
+          <option value="student">Natación o un deporte acuático
+          </option>
+          <option value="job">Deportes extremos</option>
+          <option value="learner">Fútbol, Handball, Basketball, otro parecido</option>
+          <option value="preferNo">Gimnasia (Rítmica, Artística, etc.)</option>
+          <option value="other">Otro</option>
+          <option value="other">No he practicado un deporte</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <p>Recomendarias el club Scorpius?</p>
+        <label>
+          <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked />Definitivamente</label>
+        <label>
+          <input name="user-recommend" value="maybe" type="radio" class="input-radio" />Quizás</label>
+  
+        <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio" />No estoy seguro</label>
+      </div>
+      <div class="form-group">
+        <p>Si tuviera la posibilidad de practicar este deporte, ¿Lo haría?</p>
+        <label>
+          <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked />Si</label>
+        <label>
+          <input name="user-recommend" value="maybe" type="radio" class="input-radio" />Tendría que consultar los horarios</label>
+        <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Se lo recomendaría a otra persona</label>
+        <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio" />No</label>
+      </div>
+      <div class="form-group">
+        <p>
+          Te gustaria ser un deportista de elite?
+        </p>
+        <select id="most-like" name="mostLike" class="form-control" required>
+          <option disabled selected value>Selecion</option>
+          <option value="challenges">Si</option>
+          <option value="projects">No</option>
+         </select>
+      </div>
+  
+      <div class="form-group">
+        <p>
+          Según sus conocimientos, ¿Qué considera de suma importancia para practicar un deporte?
+          <span class="clue">(Marque todo lo que corresponda)</span>
+        </p>
+  
+        <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox" />Zapatillas deportivas</label>
+        <label>
+          <input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox" />Ropa casual</label>
+        <label><input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox" />Botella de agua</label>
+        <label><input name="prefer" value="challenges" type="checkbox" class="input-checkbox" />Bebidas</label>
+        <label><input name="prefer" value="open-source-community" type="checkbox" class="input-checkbox" />Zapatillas de lona o Zapatos</label>
+        <label><input name="prefer" value="gitter-help-rooms" type="checkbox" class="input-checkbox" />Ropa deportiva</label>
+        <label><input name="prefer" value="videos" type="checkbox" class="input-checkbox" />Guantes</label>
+        <label><input name="prefer" value="city-meetups" type="checkbox" class="input-checkbox" />Vendas o Protectores</label>
+        <label><input name="prefer" value="wiki" type="checkbox" class="input-checkbox" />Depende del deporte</label>
+              </div>
+  
+      <div class="form-group">
+        <p>Comentario o sugerencia para mejorar?</p>
+        <textarea id="comments" class="input-textarea" name="comment" placeholder="Ingrese su Comentario ..."></textarea>
+      </div>
+  
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Entragar
+        </button>
+      </div>
+    </form>
+  </div>
